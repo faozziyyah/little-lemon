@@ -1,9 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import food from "../../images/restauranfood.jpg"
-//import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-//import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-//import { faGithub, faLinkedin, faMedium, faStackOverflow, } from "@fortawesome/free-brands-svg-icons";
-//import { Box, HStack } from "@chakra-ui/react";
+import Booking from "../BookingPage/Booking";
+import { Link } from 'react-router-dom';
 
 /*const socials = [
   {
@@ -51,7 +49,7 @@ const Header = () => {
         <p id="p1">Chicago</p>
         <p id="p2">We are a family owned mediterranean restaurant, focused on traditional recipes served with a modern twist.</p>
 
-        <a href="">Reserve a Table</a>
+        <Link to={'/booking'} element={<Booking />} />
 
       </article>
 
